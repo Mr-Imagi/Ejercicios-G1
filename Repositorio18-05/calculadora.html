@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        var numero1
+        var numero2
+        var Opciones = [1, 2, 3, 4]
+            (prompt = parseInt("Bienvenido a la calculadora más básica que vas a poder usar\nPorfavor elige la operacion matemática a realizar ingresando el numero correspondiente:\n-Suma [1]\n-Resta [2]\n-Multiplicación [3]\n-Division [4]"));
+        if (Opciones[1]) {
+            numero1 = prompt = parseInt("Ingrese su primera cantidad");
+            numero2 = prompt = parseInt("Ingrese su segunda cantidad");
+        }
+
+        function multi(numero1, numero2) {
+            let resultadoMulti = numero1 * numero2
+            document.write("Su resultado es  " + resultadoMulti)
+        }
+
+        function dividir(numero1, numero2) {
+            let resultadoDividir = numero1 / numero2
+            document.write("Su resultado es  " + resultadoDividir)
+        }
+
+
+        function resta(numero1, numero2) {
+            let resultadoResta = numero1 - numero2
+            document.write("Su resultado es  " + resultadoResta)
+        }
+
+        function suma(numero1, numero2) {
+            let resultadoSuma = numero1 + numero2
+            document.write("Su resultado es " + resultadoSuma)
+        }
+        suma(numero1, numero2)
+        resta(numero1, numero2)
+        multi(numero1, numero2)
+        dividir(numero1, numero2)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

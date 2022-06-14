@@ -1,0 +1,76 @@
+    1  git_version
+    2  git --version
+    3  ls
+    4  clear
+    5  pwd
+    6  cd
+    7  cd /d/CursoJava
+    8  pwd
+    9  cd /d/Curso/Semana1
+   10  cd /cd/CursoJava/Semana1
+   11  cd /d/CursoJava/Semana1
+   12  clear
+   13  pwd
+   14  cd d/CursoJava
+   15  cd/d/CursoJava
+   16  cd /d/CursoJava
+   17  mkdir ejemplo
+   18  mkdir ejemplo2
+   19  mkdir ejemplo3
+   20  history
+   21  cd /d/CursoJava/ejemplo
+   22  touch archivo.txt
+   23  touch index.html
+   24  ls
+   25  mkdir otra carpeta
+   26  ls
+   27  ls -l
+   28  touch .archivo_oculto.txt
+   29  touch .archivo_ocultodos.txt
+   30  ls -la
+   31  ls -all
+   32  ls - la
+   33  ls -al
+   34  sudo nano archivo.txt
+   35  man
+   36  nano archivo.txt
+   37  ls --help
+   38  cd ..
+   39  rm -Rf ejemplo
+   40  rm ejemplo3
+   41  rm index.html
+   42* 
+   43* rm
+   44  git_version
+   45  cp archivo_traspaso.text archivo.txt
+   46  cp archivo_traspaso.txt ejemplo3/gato.txt
+   47  ls
+   48  touch ejemplo3/otro.txt
+   49  mv
+   50  mv archivo.txt ejemplo3
+   51  mv otro.txt ejemplo3
+   52  cd cursojava/ejemplo3
+   53  cd:/CursoJava/ejemplo3
+   54  ls --la
+   55  ls - la
+   56  ls -al
+   57  mv archivo_traspaso.txt ejemplo3
+   58  touch archivo_paracambiarnombreapestoso.txt
+   59  ls -la
+   60  mv archivo_paracambiarnombreapestoso.txt ejemplo3/gatito
+   61  mv ls -la
+   62  ls -la
+   63  mv ejemplo3/gatito.txt
+   64  mv /CursoJava/ejemplo3 gatito.txt
+   65  rename /ejemplo3 gatito.txt
+   66  cd /CursoJava/ejemplo3
+   67  cd CursoJava/ejemplo3
+   68  cd /CursoJava/ejemplo3
+   69  cd /d/CursoJava/ejemplo3
+   70  ls -la
+   71  cat gatito
+   72  cat gato
+   73  cat gato
+   74  cat ejemplo3/gato.text
+   75  cat gato.txt
+   76  history > comandos.txt
