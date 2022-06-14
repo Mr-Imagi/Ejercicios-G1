@@ -1,0 +1,122 @@
+*creacion de base de datos
+create database "nombre";
+
+CREATE USER '(tu usuario)'@'localhost' IDENTIFIED BY 'Admin1234’;
+
+GRANT ALL PRIVILEGES ON *.* TO '(tu usuario)'@'localhost' WITH GRANT OPTION;
+
+CREATE USER '(tu usuario)'@'%' IDENTIFIED BY 'Admin1234';
+
+FLUSH PRIVILEGES;
+
+exit, para salir de mysql
+
+comando para entrar:
+mysql -u danko -p Admin1234
+
+show databases; (para ver bases de datos en el computador
+
+use "nombre base de datos"; (para ver en cual estas y cambiar a esa
+
+show tables; (para ver tablas creadas)
+
+create table "nombre de la tabla"(-nombrecolumna tipo dato,-nombre columna tipo dato, primary key (nombre columna1))
+
+describe "nombre de la tabla" (te muestra la estructura)
+
+select * from "nombre de la tabla" (es para consultar la data de la tabla
+
+insercion de datos:
+insert into "nombre de la tabla" (columna1, columna2....columnaN) values (valor1, valor2....valorn);
+
+insert into cliente (id,nombre,correo) values (1, 'zoe','a@a.cl');
+
+vaciar las tablas:
+truncate table clientes;
+
+eliminar la tabla:
+drop table "nombre de la tabla"
+
+eliminar la base de datos completa
+drop database "nombre de la base"
+
+modificar datos:
+update "nombre de tabla"
+set (nombre del atributo a cambiar) = (nuevo valor)
+where id = (posicion que se quiere cambiar);
+
+se pueden pedir datos especificos:
+select * from "nombre de la tabla" where id (o cualquier atributo que quieras buscar) "y aqui va la formula, como por ejemplo => a 3, traeria todos los datos menores o iguales a 3. si le añades "and" puedes poner mas filtros
+
+se puede añadir "like" despues del atributo para que busque todos los parecidos o que incluyan la palabra a buscar, por ejemplo
+
+where clientes like '%ju%'; puedes poner el porcentaje adelante o atras, dependiendo de donde quieres buscar, es con comillas simples
+
+en where, si necesitas filtrar mas de un contenido de una tabla, puedes poner IN y si son palabras va con parentesis
+
+con el between se puede buscar entre valores tambien, si se le añade "order by" "atributo que quieres revisar" asc (ascendente o descendente)
+
+-- modificar tabla
+ALTER TABLE nombre_tabla
+ADD nombre_columna tipo restriccion;
+
+relacionar tablas:
+alter table clientes
+add foreign key (direccionId) references direcciones(id);
+
+si le añades add constraint a una foreign key quedan vinculadas, por lo que no se pueden borrar como si nada
+
+para poner auto_increment se inserta en la primary key con "auto_increment"
+
+Alter table "nombre de la tabla"
+add constraint fk "nombre de la
+
+para combinar tablas y buscar entre dos:
+select * 
+from (nombre tabla1), (nombre tabla2)
+where c.customerNumber = o.customerNumber
+and c.customerNumber = 496
+order by c.customerNumber desc;
+
+
+-------------------------------------------------
+Join
+
+select c.customerNumber, o.orderNumber ,c.customerName 
+from customers c, orders o
+where c.customerNumber = o.customerNumber 
+and c.customerNumber = 496
+order by c.customerNumber desc;
+
+select * c. customerNumber, o.orderNumber, c.customerName
+From customers c --tabla A
+inner join orders o --tabla B
+on c.customerNumber = o.customerNumber
+
+select * 
+FROM tablaA a
+inner join tableB b 
+on a.key= b.key;
+
+select a.id,a.nombre as 'culones' FROM alumnos a inner join grupos g on a.grupo_id = g.id where g.id = 4;
+
+(se pueden nombrar los resultados del filtro poniendo as 'comillas simples' y asi no repetir categorias)
+
+--exclusion
+select*
+from tabla 1
+left join (o right) tabla 2
+on tabla1 key = tabla 2 key
+where 
+
+
+   
+ --------------------------------------------
+
+se trabaja con tablas
+
+tablas -> columnas
+objeto -> tabla
+atributos -> columnas
+
+
